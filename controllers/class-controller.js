@@ -7,9 +7,9 @@ const sclassCreate = async (req, res) => {
     try {
         const sclass = new Sclass({
             sclassName: req.body.sclassName,
+            sclassFee: req.body.sclassFee,
             school: req.body.adminID
         });
-
         const existingSclassByName = await Sclass.findOne({
             sclassName: req.body.sclassName,
             school: req.body.adminID

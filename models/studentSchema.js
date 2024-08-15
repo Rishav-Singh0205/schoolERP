@@ -41,6 +41,10 @@ const studentSchema = new mongoose.Schema({
         ref: 'sclass',
         required: true,
     },
+    sclassFee: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'sclass',
+    },
     school: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin',

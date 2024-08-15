@@ -5,6 +5,10 @@ const sclassSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    sclassFee: {
+        type: Number,
+        required: true,
+    },
     school: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'admin'
